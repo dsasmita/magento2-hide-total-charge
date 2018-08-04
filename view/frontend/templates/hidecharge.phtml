@@ -1,0 +1,27 @@
+<?php
+$helper = $this->helper('Dangs\TotalChargeHide\Helper\Data');
+$status = $helper->getStatusCharge();
+?>
+<?php if($status): ?>
+	<style type="text/css">
+	tr.totals.charge{
+		display: none;
+	}
+	tr.base_grandtotal{
+		display: none;
+	}
+	</style>
+	<script type="text/javascript">
+		require(["jquery"], function(jQuery){
+			jQuery('tr.totals.charge').css('display','none');
+			jQuery(".checkout-index-index").on("change","input[name='payment[method]']", function(e){
+				var type = jQuery(this).val();
+				if(type == 'paypal_express'){
+					jQuery('tr.totals.charge').css('display','table-row');
+				}else{
+					jQuery('tr.totals.charge').css('display','none');
+				}
+			});
+		});
+	</script>
+<?php endif; ?>
