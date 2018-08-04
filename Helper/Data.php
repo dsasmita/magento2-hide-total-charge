@@ -12,7 +12,7 @@ class Data extends \Magento\Framework\App\Helper\AbstractHelper
     }
 
 	/**
-     * Return the warehouse address
+     * Return status
      *
      * @return string
      */
