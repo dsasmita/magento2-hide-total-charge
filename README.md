@@ -1,0 +1,1 @@
+hide total charge information
