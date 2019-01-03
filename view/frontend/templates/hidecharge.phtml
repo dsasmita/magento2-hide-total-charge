@@ -1,13 +1,10 @@
 <?php
 $helper = $this->helper('Dangs\TotalChargeHide\Helper\Data');
-$status = $helper->getStatusCharge();
+$status = $helper::getStatusCharge($helper->getConfig());
 ?>
 <?php if($status): ?>
 	<style type="text/css">
 	tr.totals.charge{
-		display: none !important;
-	}
-	tr.base_grandtotal{
 		display: none !important;
 	}
 	</style>
