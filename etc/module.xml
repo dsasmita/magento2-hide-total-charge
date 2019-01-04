@@ -3,6 +3,7 @@
     <module name="Dangs_TotalChargeHide" setup_version="1.0.0">
     	<sequence>
             <module name="Magento_Checkout"/>
+            <module name="Magento_Sales"/>
         </sequence>
     </module>
 </config>

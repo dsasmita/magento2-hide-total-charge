@@ -7,13 +7,14 @@ This Extension is used for hide information total charge "You will be charged fo
 ### Frontend
 - hide total charge info on checkout payment
 - hide total charge info on order detail
+- hide total charge info on order email notificaion
 
 ### Backend
 - Set status enable/ disable function under menu Stores >> Configuration >> Sales - Sales Under tabs Checkout Totals Sort Order
 
 ## Introduction installation:
 
-### Install Magento 2 Hide Price Not Login
+### Installation
 - Download file
 - Unzip the file
 - Create a folder [root]/app/code/Dangs/TotalChargeHide
